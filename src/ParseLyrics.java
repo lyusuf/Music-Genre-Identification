@@ -30,7 +30,7 @@ public class ParseLyrics {
     public static ArrayList<Integer> genreTotalNumWords = new ArrayList<>(
             Arrays.asList(0, 0, 0, 0));
 
-    public static void main(String[] args) {
+    public ParseLyrics() {
         for (int i = 1; i <= 30; i++) {
             String songFile = "src/Country/country" + i + ".txt";
             readSongFileCountry(songFile);
@@ -40,13 +40,22 @@ public class ParseLyrics {
             readSongFilePop(songFile);
         }
 
+        for (int i = 1; i <= 30; i++) {
+            //String songFile = "src/Rap/rap" + i + ".txt";
+            //readSongFileRap(songFile);
+        }
+
+        for (int i = 1; i <= 30; i++) {
+            //String songFile = "src/Rock/rock" + i + ".txt";
+            //readSongFileRock(songFile);
+        }
+
         computeWordProb();
 
         System.out.println(countryWords);
         System.out.println(countryWordsCount);
         System.out.println(countryWordsProb);
         System.out.println(genreTotalNumWords);
-
     }
 
     //compute prob of words for each genre 
