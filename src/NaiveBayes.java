@@ -17,7 +17,7 @@ public class NaiveBayes {
         System.out.println(key);
 
         //iterate through all test cases
-        for (int i = 1; i <= 20; i++) {
+        for (int i = 1; i <= 40; i++) {
             String songFile = "src/Test/test" + i + ".txt";
             ArrayList<String> words = readTestSongFile(songFile);
             String guess = guessGenre(words, parseLyrics);
