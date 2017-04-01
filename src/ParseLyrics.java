@@ -51,11 +51,6 @@ public class ParseLyrics {
         }
 
         computeWordProb();
-
-        System.out.println(countryWords);
-        System.out.println(countryWordsCount);
-        System.out.println(countryWordsProb);
-        System.out.println(genreTotalNumWords);
     }
 
     //compute prob of words for each genre 
@@ -77,8 +72,8 @@ public class ParseLyrics {
         }
 
         totalWords = genreTotalNumWords.get(3);
-        for (int i = 0; i < rockWordsProb.size(); i++) {
-            rockWordsProb.add(rockWordsProb.get(i) / totalWords);
+        for (int i = 0; i < rockWordsCount.size(); i++) {
+            rockWordsProb.add((double) rockWordsCount.get(i) / totalWords);
         }
 
     }
