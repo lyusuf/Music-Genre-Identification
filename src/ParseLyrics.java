@@ -41,13 +41,13 @@ public class ParseLyrics {
         }
 
         for (int i = 1; i <= 30; i++) {
-            //String songFile = "src/Rap/rap" + i + ".txt";
-            //readSongFileRap(songFile);
+            String songFile = "src/Rap/rap" + i + ".txt";
+            readSongFileRap(songFile);
         }
 
         for (int i = 1; i <= 30; i++) {
-            //String songFile = "src/Rock/rock" + i + ".txt";
-            //readSongFileRock(songFile);
+            String songFile = "src/Rock/rock" + i + ".txt";
+            readSongFileRock(songFile);
         }
 
         computeWordProb();
